@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+
+  @font-face {
+    font-family: "Lexend", sans-serif;
+    src: url('src\assets\fonts\static\Lexend-SemiBold.ttf') format('ttf');
+         font-weight: 600;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: "Golos Text", serif;
+    src: url('src\assets\fonts\static\GolosText-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+
+    font-family: "Coustard", serif;
+    src: url('src\assets\fonts\static\Coustard-Black.ttf')  format('ttf')  ;
+    font-weight: 900;
+    font-style: normal;
+}
+
+@layer utilities {
+
+  .btn {
+    @apply bg-orangebackground text-white px-16  py-5
+  }
+
+  
+.btn:hover {
+  @apply bg-orange-500; /* Change background on hover */
+}
+
+}
+
+.btn-secondary {
+  @apply bg-lightcreme text-black  px-16 py-5
+}
+
+
+.btn-third {
+  @apply bg-green-600 text-white px-16 py-5
+}
+
+.btn-secondary:hover {
+  @apply bg-orange-300
+}
+
+.btn-third:hover {
+  @apply bg-green-400
+}
+
+.clip-path-example {
+  clip-path:polygon(0 0, 80% 0, 80% 100%, 0 100%);
+}
+
+
+}
